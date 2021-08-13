@@ -18,7 +18,7 @@ body {
   font-size: 14px;
 }
 
-body.lock{
+body.lock {
   overflow: hidden;
 }
 
@@ -55,7 +55,7 @@ body.lock{
   padding-bottom: 44px;
   padding-top: 44px;
 
-  &__logo{
+  &__logo {
     z-index: 10;
   }
   &__inner {
@@ -67,15 +67,11 @@ body.lock{
   &__menu {
     position: relative;
   }
-
-  
 }
 .menu {
-
-  &__icon { 
+  &__icon {
     display: none;
   }
-
 
   &__list {
     display: flex;
@@ -91,7 +87,6 @@ body.lock{
     border-top: 1px solid transparent;
     transition: all 0.2s;
   }
-
 }
 
 .about {
@@ -123,7 +118,6 @@ body.lock{
     font-size: 48px;
     margin-bottom: 33px;
     position: relative;
-
   }
 
   &__subtitle {
@@ -155,7 +149,7 @@ body.lock{
   &__history-title::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: auto;
     bottom: -3px;
     width: 67px;
     height: 21px;
@@ -202,7 +196,7 @@ body.lock{
   &__title::before {
     content: "";
     position: absolute;
-    left: 422px;
+    left: auto;
     bottom: -3px;
     width: 67px;
     height: 21px;
@@ -317,7 +311,7 @@ body.lock{
   &__title::before {
     content: "";
     position: absolute;
-    left: 430px;
+    left: auto;
     bottom: -3px;
     width: 67px;
     height: 21px;
@@ -351,13 +345,16 @@ body.lock{
   }
 
   .grid {
-    width: 1200px;
+    width: 100%;
+  }
+  .rid-sizer,
+  .grid-item{
+    width: 20%;
   }
 
   .grid-item {
     width: 262px;
     height: 175px;
-    float: left;
     padding-bottom: 30px;
     padding-right: 30px;
   }

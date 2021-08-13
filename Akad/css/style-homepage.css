@@ -169,7 +169,7 @@ body.lock {
 .about__history-title::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: auto;
   bottom: -3px;
   width: 67px;
   height: 21px;
@@ -217,7 +217,7 @@ body.lock {
 .benefits__title::before {
   content: "";
   position: absolute;
-  left: 422px;
+  left: auto;
   bottom: -3px;
   width: 67px;
   height: 21px;
@@ -343,7 +343,7 @@ body.lock {
 .portfolio__title::before {
   content: "";
   position: absolute;
-  left: 430px;
+  left: auto;
   bottom: -3px;
   width: 67px;
   height: 21px;
@@ -378,13 +378,17 @@ body.lock {
 }
 
 .portfolio .grid {
-  width: 1200px;
+  width: 100%;
+}
+
+.portfolio .rid-sizer,
+.portfolio .grid-item {
+  width: 20%;
 }
 
 .portfolio .grid-item {
   width: 262px;
   height: 175px;
-  float: left;
   padding-bottom: 30px;
   padding-right: 30px;
 }
