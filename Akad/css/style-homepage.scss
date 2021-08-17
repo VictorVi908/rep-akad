@@ -27,10 +27,7 @@ body.lock {
   src: url("../fonts/montserrat-bold.ttf");
 }
 
-@font-face {
-  font-family: "icons";
-  src: url("../fonts/ionicons.ttf");
-}
+
 
 .title {
   font-family: "Monsterrat bold";
@@ -50,44 +47,9 @@ body.lock {
   padding: 0 10px;
   margin: 0 auto;
 }
+//header 
+@import 'header';
 
-.header {
-  padding-bottom: 44px;
-  padding-top: 44px;
-
-  &__logo {
-    z-index: 10;
-  }
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__menu {
-    position: relative;
-  }
-}
-.menu {
-  &__icon {
-    display: none;
-  }
-
-  &__list {
-    display: flex;
-  }
-
-  &__link {
-    text-transform: uppercase;
-    font-family: "Monsterrat bold";
-    color: #60606e;
-    margin: 0 20px 0 0;
-    font-size: 12px;
-    font-weight: 700;
-    border-top: 1px solid transparent;
-    transition: all 0.2s;
-  }
-}
 
 .about {
   text-align: right;
@@ -258,7 +220,7 @@ body.lock {
     height: 14px;
   }
 
-  &__item:nth-child(2):before {
+  &__item:nth-child(2)::before {
     content: "";
     background-image: url("../img/ben-icon-2.png");
     position: absolute;
@@ -268,7 +230,7 @@ body.lock {
     height: 28px;
   }
 
-  &__item:nth-child(3):before {
+  &__item:nth-child(3)::before {
     content: "";
     background-image: url("../img/ben-icon-3.png");
     position: absolute;
@@ -278,7 +240,7 @@ body.lock {
     height: 28px;
   }
 
-  &__item:nth-child(4):before {
+  &__item:nth-child(4)::before {
     content: "";
     background-image: url("../img/ben-icon-4.png");
     position: absolute;
@@ -402,155 +364,5 @@ body.lock {
   }
 }
 
-.footer {
-  &__subscribe {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 
-  &__wrapper {
-    background-color: #7beec7;
-  }
-
-  &__links-inner {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__links {
-    background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 95px;
-  }
-
-  &__links-info {
-    color: #60606e;
-    text-align: right;
-  }
-
-  &__menu-list {
-    display: flex;
-  }
-
-  &__menu-li {
-    text-transform: uppercase;
-  }
-
-  &__menu-li a {
-    color: #60606e;
-  }
-
-  &__menu-li + &__menu-li {
-    margin-left: 40px;
-    position: relative;
-  }
-
-  &__menu-li + &__menu-li::before {
-    content: "";
-    position: absolute;
-    margin-right: 25px;
-    width: 4px;
-    height: 1px;
-    background-color: #60606e;
-    left: -22px;
-    top: 6px;
-  }
-
-  &__copyrights {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #9a9a9a;
-    line-height: 3.429;
-  }
-
-  &__social a {
-    color: #60606e;
-  }
-  &__social a + a {
-    margin-left: 15px;
-  }
-}
-
-.subscribe {
-  &__inner {
-    display: flex;
-  }
-
-  &__title {
-    color: #fff;
-    font-size: 30px;
-    line-height: 1.6;
-    margin-bottom: 27px;
-    margin-right: 97px;
-  }
-
-  &__btn {
-    padding: 21px 30px;
-    color: #7beec7;
-    background-color: #fff;
-    font-family: "Monsterrat bold";
-    text-transform: uppercase;
-    display: inline-block;
-    transition: all 0.3s;
-  }
-
-  &__btn:hover {
-    color: #60606e;
-  }
-
-  &__form {
-    background-color: #fff;
-    padding: 20px 25px;
-  }
-
-  &__form-title {
-    margin-bottom: 21px;
-    font-size: 24px;
-    line-height: 1.5;
-  }
-
-  &__form-text {
-    font-size: 16px;
-    font-family: "OpenSans";
-    color: #999999;
-    line-height: 1.5;
-    margin-bottom: 32px;
-  }
-
-  &__email-field {
-    display: flex;
-  }
-
-  &__form-email {
-    padding: 20px;
-    opacity: 0.5;
-    width: 376px;
-  }
-
-  &__form-email::placeholder {
-    font-size: 12px;
-    font-family: "Monsterrat bold";
-    color: #000000;
-    text-transform: uppercase;
-    line-height: 4;
-    z-index: 1;
-  }
-
-  &__form-btn {
-    background-color: #7beec7;
-    padding: 21px 50px;
-    border: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Monsterrat bold";
-    margin-left: -2px;
-    z-index: 3;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  &__form-btn:hover {
-    color: #60606e;
-  }
-}
+@import 'footer';

@@ -1,0 +1,38 @@
+.header {
+    padding-bottom: 44px;
+    padding-top: 44px;
+  
+    &__logo {
+      z-index: 10;
+    }
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &__menu {
+      position: relative;
+    }
+  }
+  .menu {
+    &__icon {
+      display: none;
+    }
+  
+    &__list {
+      display: flex;
+    }
+  
+    &__link {
+      text-transform: uppercase;
+      font-family: "Monsterrat bold";
+      color: #60606e;
+      margin: 0 20px 0 0;
+      font-size: 12px;
+      font-weight: 700;
+      border-top: 1px solid transparent;
+      transition: all 0.2s;
+    }
+  }
+  
