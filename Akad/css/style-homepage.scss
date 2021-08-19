@@ -27,8 +27,6 @@ body.lock {
   src: url("../fonts/montserrat-bold.ttf");
 }
 
-
-
 .title {
   font-family: "Monsterrat bold";
   font-size: 30px;
@@ -47,9 +45,8 @@ body.lock {
   padding: 0 10px;
   margin: 0 auto;
 }
-//header 
-@import 'header';
-
+//header
+@import "header";
 
 .about {
   text-align: right;
@@ -309,9 +306,13 @@ body.lock {
   .grid {
     width: 100%;
   }
-  .rid-sizer,
-  .grid-item{
-    width: 20%;
+
+  .grid__tabs-block {
+    display: none;
+  }
+
+  .grid__tabs-block--active {
+    display: block;
   }
 
   .grid-item {
@@ -320,6 +321,7 @@ body.lock {
     padding-bottom: 30px;
     padding-right: 30px;
   }
+
 
   .grid-item--height2 {
     height: 264px;
@@ -330,25 +332,18 @@ body.lock {
 }
 
 .menu {
-  &__list-li-first > a {
+  &__list-li {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
+  &__list-li--picked {
     display: inline-block;
     padding: 10px 21px;
     background-color: #7beec7;
     text-transform: uppercase;
     color: #fff;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-family: "Monsterrat bold";
-    transition: all 0.3s;
-  }
-
-  &__list-li-first > a:hover {
-    color: #60606e;
-  }
-
-  &__list-li {
-    margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: -20px;
   }
 
   &__list-li a {
@@ -358,11 +353,6 @@ body.lock {
     transition: all 0.4s;
     border-top: 1px solid transparent;
   }
-
-  &__list-li a:hover {
-    border-top: 1px solid #60606e;
-  }
 }
 
-
-@import 'footer';
+@import "footer";
