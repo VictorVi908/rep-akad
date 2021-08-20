@@ -305,29 +305,29 @@ body.lock {
 
   .grid {
     width: 100%;
-  }
 
-  .grid__tabs-block {
-    display: none;
-  }
+    &__tabs-block {
+      display: none;
+    }
 
-  .grid__tabs-block--active {
-    display: block;
-  }
+    &__tabs-block--active {
+      display: block;
 
-  .grid-item {
-    width: 262px;
-    height: 175px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-  }
+    }
 
+    &-item {
+      width: 262px;
+      height: 175px;
+      padding-bottom: 30px;
+      padding-right: 30px;
+    }
 
-  .grid-item--height2 {
-    height: 264px;
-  }
-  .grid-item--height3 {
-    height: 395px;
+    &-item--height2 {
+      height: 264px;
+    }
+    &-item--height3 {
+      height: 395px;
+    }
   }
 }
 
