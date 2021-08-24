@@ -1,0 +1,35 @@
+@media(max-width: 905px) {
+    .footer__links-inner{
+        display: block;
+    }
+    .footer__links-info {
+        text-align: center;
+
+    }
+    .footer__menu-list {
+        display: block;
+        text-align: center;
+    }
+    .footer__menu-li{
+        margin-bottom: 15px;
+    }
+    .footer__menu-li+.footer__menu-li{
+        margin-left: 0;
+    }
+    .footer__menu-li::before{
+        display: none;
+    }
+}
+
+@media(max-width: 350px) {
+    .subscribe__title {
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .subscribe__form-btn {
+        padding: 21px 22px;
+    }
+    .subscribe__form-title {
+        font-size: 17px;
+    }
+}
