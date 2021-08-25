@@ -1,0 +1,176 @@
+@media(max-width: 1298px) {
+    .team__gallery {
+        width: 100%;
+    }
+    .team__gallery-img {
+        flex-basis: 30%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .reviews__slider {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .reviews__inner {
+        display: block;
+    }
+    .reviews__partners {
+        justify-content: space-between;
+    }
+    .reviews__partners img {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 900px) {
+    .team__info-text {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .team__info {
+        flex-wrap: wrap;
+        padding: 46px 28px;
+    }
+}
+
+@media(max-width: 890px) {
+    .about__inner {
+        display: block;
+        text-align: center;
+    }
+    .about__item+.about__item {
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .about__item {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .about__item-title {
+        margin-bottom: 15px;
+    }
+    .about__item-subtitle {
+        margin-bottom: 13px;
+    }
+    .about {
+        margin-bottom: 85px;
+    }
+    .about__item {
+        width: 100%;
+    }
+    .top {
+        margin-bottom: 85px;
+    }
+    .benefits__item-title {
+        margin-bottom: 28px;
+        font-size: 15px;
+    }
+    .benefits__item {
+        -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    }
+    .benefits__inner {
+        justify-content: space-around;
+    }
+    .team__gallery {
+        display: block;
+        text-align: center;
+    }
+    .team__gallery-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .reviews__partners {
+        display: block;
+    }
+    .reviews__partners img {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 735px) {
+    .benefits__inner {
+        display: block;
+    }
+}
+
+@media(max-width: 693px) {
+    .reviews__partners {
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 610px) {
+    .top__title {
+        font-size: 26px;
+        margin-top: 140px;
+    }
+    .about__item-title {
+        font-size: 25px;
+    }
+    .about__text {
+        line-height: 1.843;
+        font-size: 13px;
+    }
+    .about__item-subtitle {
+        font-size: 13px;
+    }
+    .benefits__title {
+        font-size: 25px;
+    }
+    .benefits__text {
+        margin-bottom: 77px;
+        font-size: 13px;
+    }
+    .team__title {
+        font-size: 25px;
+    }
+    .team__text {
+        margin-bottom: 55px;
+        font-size: 13px;
+    }
+    .slider__item-text {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 350px) {
+    .top__title {
+        font-size: 23px;
+        margin-top: 110px;
+    }
+    .top__subtitle {
+        font-size: 13px;
+    }
+    .about__item-title {
+        font-size: 22px;
+    }
+    .about__text {
+        line-height: 1.843;
+        font-size: 12px;
+    }
+    .about__item-subtitle {
+        font-size: 12px;
+    }
+    .benefits__title {
+        font-size: 22px;
+    }
+    .benefits__item-text {
+        line-height: 1.743;
+    }
+    .benefits {
+        margin-bottom: 85px;
+    }
+    .title::before {
+        content: "";
+        position: absolute;
+        left: auto;
+        bottom: -3px;
+        width: 38px;
+        height: 17px;
+        background-color: #7beec7;
+        z-index: -1;
+    }
+}
