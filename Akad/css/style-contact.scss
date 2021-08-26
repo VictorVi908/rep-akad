@@ -1,0 +1,218 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Monsterrat bold";
+    src: url("../fonts/montserrat-bold.ttf");
+}
+
+@font-face {
+    font-family: "Ionicons";
+    src: url("../fonts/ionicons.ttf");
+}
+
+.title {
+    font-family: "Monsterrat bold";
+    font-size: 30px;
+    color: #60606e;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    left: auto;
+    bottom: -3px;
+    width: 67px;
+    height: 21px;
+    background-color: #7beec7;
+    z-index: -1;
+}
+
+.subtitle {
+    font-family: "Monsterrat bold";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #60606e;
+}
+
+.text {
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: #60606e;
+}
+
+.top {
+    background-image: url("../img/site-hero2.jpg");
+    background-size: cover;
+    min-height: 500px;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+@import "header";
+
+.social a {
+    color: #60606e;
+}
+.social a + a {
+    margin-left: 15px;
+}
+
+.top {
+    &__title {
+        margin-top: 175px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 165px;
+    }
+}
+
+.contacts {
+    margin-bottom: 150px;
+    margin-top: 150px;
+
+    &__row{
+        display: flex;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__feedback {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 28px;
+        margin-bottom: 70px;
+    }
+
+    &__input-name,
+    &__input-email,
+    &__input-object,
+    &__input-message {
+        border: 1px solid black;
+        background-color: #fefcf9;
+        opacity: 0.3;
+        padding: 20px 10px 20px 20px;
+        color: black;
+        font-family: "Monsterrat bold";
+        margin-bottom: 35px;
+    }
+
+    &__input-name::placeholder,
+    &__input-email::placeholder,
+    &__input-object::placeholder,
+    &__input-message::placeholder{
+        text-transform: uppercase;
+    }
+
+    &__input-name {
+        width: 260px;
+        margin-right: 35px;
+    }
+
+    &__input-email {
+        width: 260px;
+    }
+
+    &__input-object {
+        width: 100%;
+    }
+
+    &__input-message {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__info {
+        max-width: 550px;
+    }
+
+    &__info-title {
+        font-size: 18px;
+        font-family: "Monsterrat bold";
+        color: #60606e;
+        text-transform: uppercase;
+        line-height: 2.667;
+    }
+
+    &__info-text {
+        font-size: 14px;
+        color: #999999;
+        line-height: 2.143;
+    }
+
+    &__info-list {
+        font-size: 14px;
+        color: #999999;
+        line-height: 2.143;
+        margin-bottom: 25px;
+
+    }
+
+    &__info-list li:last-child{
+        font-weight: 700;
+    }
+
+}
+
+.contacts {
+    &__btn {
+        background-color: rgb(123, 238, 199);
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "Monsterrat bold";
+        font-size: 14px;
+        padding: 20px 65px;
+        border: none;
+        cursor: pointer;
+        max-width: 165px;
+        transition: all 0.3s;
+    }
+    &__btn:hover {
+        color: #60606e;
+    }
+}
+@import "footer";
+
+@import "header-media";
+@import "footer-media";

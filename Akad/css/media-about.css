@@ -23,6 +23,47 @@
     }
 }
 
+@media(max-width: 955px) {
+    .subscribe__title {
+        font-size: 22px;
+    }
+    .subscribe__form-title {
+        font-size: 20px;
+    }
+    .subscribe__form {
+        padding: 20px 15px;
+    }
+    .subscribe__form-email {
+        width: 100%;
+    }
+}
+
+/* @media(max-width: 905px) {
+    .footer__links-inner{
+        display: block;
+    }
+    .footer__links-info {
+        text-align: center;
+
+    }
+    .footer__menu-list {
+        display: block;
+        text-align: center;
+    }
+    .footer__menu-li{
+        margin-bottom: 15px;
+    }
+    .footer__menu-li+.footer__menu-li{
+        margin-left: 0;
+    }
+    .footer__menu-li::before{
+        display: none;
+    }
+}
+
+
+
+
 @media(max-width: 900px) {
     .team__info-text {
         font-size: 15px;
@@ -32,7 +73,7 @@
         flex-wrap: wrap;
         padding: 46px 28px;
     }
-}
+} */
 
 @media(max-width: 890px) {
     .about__inner {
@@ -89,11 +130,24 @@
     }
 }
 
+/* @media(max-width: 794px) {
+    .subscribe__inner {
+        display: block;
+        text-align: center;
+    }
+    .subscribe__link{
+        margin-bottom: 20px;
+    }
+    .subscribe__title{
+        margin-right: 0;
+    }
+}
+
 @media(max-width: 735px) {
     .benefits__inner {
         display: block;
     }
-}
+} */
 
 @media(max-width: 693px) {
     .reviews__partners {
@@ -172,5 +226,15 @@
         height: 17px;
         background-color: #7beec7;
         z-index: -1;
+    }
+    .subscribe__title {
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .subscribe__form-btn {
+        padding: 21px 22px;
+    }
+    .subscribe__form-title {
+        font-size: 17px;
     }
 }

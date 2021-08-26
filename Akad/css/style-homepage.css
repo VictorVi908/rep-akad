@@ -708,6 +708,21 @@ body.lock {
   }
 }
 
+@media (max-width: 955px) {
+  .subscribe__title {
+    font-size: 22px;
+  }
+  .subscribe__form-title {
+    font-size: 20px;
+  }
+  .subscribe__form {
+    padding: 20px 15px;
+  }
+  .subscribe__form-email {
+    width: 100%;
+  }
+}
+
 @media (max-width: 905px) {
   .footer__links-inner {
     display: block;
@@ -727,6 +742,19 @@ body.lock {
   }
   .footer__menu-li::before {
     display: none;
+  }
+}
+
+@media (max-width: 794px) {
+  .subscribe__inner {
+    display: block;
+    text-align: center;
+  }
+  .subscribe__link {
+    margin-bottom: 20px;
+  }
+  .subscribe__title {
+    margin-right: 0;
   }
 }
 
