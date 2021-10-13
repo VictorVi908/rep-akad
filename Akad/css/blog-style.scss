@@ -1,0 +1,337 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Monsterrat bold";
+    src: url("../fonts/montserrat-bold.ttf");
+}
+
+// @font-face {
+//     font-family: "Ionicons";
+//     src: url("../fonts/ionicons.ttf");
+// }
+
+.title {
+    font-family: "Monsterrat bold";
+    font-size: 30px;
+    color: #60606e;
+    text-transform: uppercase;
+}
+
+.top {
+    background-image: url("../img/site-hero2.jpg");
+    background-size: cover;
+    min-height: 500px;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+@import "header";
+
+.top {
+    margin-bottom: 150px;
+    &__title {
+        margin-top: 175px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 165px;
+    }
+}
+
+.main {
+    &__wrapper {
+        display: flex;
+    }
+}
+
+.feed {
+    // max-width: 750px;
+    margin-right: 125px;
+    &__item {
+        max-width: 750px;
+        margin-bottom: 100px;
+    }
+}
+
+.comment {
+    margin-bottom: -3px;
+    margin-right: 2px;
+}
+.like {
+    margin-bottom: -3px;
+    margin-right: 2px;
+    fill: #cdcdcd;
+}
+
+.like:hover {
+    fill: #ea6b6b;
+}
+
+.like--checked {
+    fill: #ea6b6b;
+}
+
+.item {
+    &__post-image {
+        width: 750px;
+        height: 500px;
+        background-color: #d8d8d8;
+        margin-bottom: 30px;
+    }
+
+    &__post-info {
+        margin-bottom: 20px;
+    }
+
+    &__date {
+        display: inline-block;
+        padding: 10px 24px 10px 17px;
+        font-family: "Monsterrat bold";
+        color: #fff;
+        background-color: #7eeec8;
+        margin-right: 10px;
+    }
+
+    &__comment {
+        padding-left: 10px;
+        margin-left: 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__like {
+        padding-left: 10px;
+        margin-left: 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__describe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: "Monsterrat bold";
+        font-size: 18px;
+        color: #60606e;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: #999999;
+        line-height: 1.714;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        color: #60606e;
+        text-transform: uppercase;
+        font-family: "Monsterrat bold";
+    }
+}
+
+.aside {
+    max-width: 265px;
+    &__search-form {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    &__search {
+        padding: 15px 50px 15px 15px;
+        background-color: #ececec;
+        border: none;
+        font-size: 14px;
+    }
+
+    &__search::placeholder {
+        color: #000000;
+        text-transform: uppercase;
+        font-family: "Monsterrat bold";
+        opacity: 0.3;
+    }
+
+    &__search-btn {
+        margin-left: -40px;
+        margin-top: 6px;
+        width: 30px;
+        height: 35px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+    }
+
+
+    &__posts-title {
+        font-size: 12px;
+        font-family: "Monsterrat bold";
+        color: #60606e;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__posts-list {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .menu__list-li {
+        padding: 0 10px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #a1a1a1;
+    }
+
+    .menu__list-li a {
+        font-size: 12px;
+        font-family: "Monsterrat bold";
+        color: #999999;
+        text-transform: uppercase;
+    }
+
+    .menu__list-li--picked {
+        border-bottom: 2px solid #7beec7;
+    }
+
+    .menu__list-li--picked a {
+        color: #60606e;
+    }
+
+    &__categories{
+        margin-bottom: 50px;
+    }
+
+    &__tags {
+        margin-bottom: 50px;
+
+    }
+
+    &__tags-title {
+        font-size: 12px;
+        font-family: "Monsterrat bold";
+        color: #60606e;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__tags-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__tags-item {
+        display: inline-block;
+        margin: 4px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        background-color: #e5e5e5;
+        font-size: 12px;
+        font-family: "Montserrat";
+        color: #999999;
+    }
+
+    
+      
+
+}
+
+.grid {
+    &__tabs-block {
+        display: none;
+    }
+
+    &__tabs-block--active {
+        display: block;
+    }
+}
+.grid-item {
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+    margin-bottom: 12px;
+}
+
+.grid-img {
+    width: 90%;
+    height: 82px;
+    background-color: #d8d8d8;
+    margin-right: 20px;
+}
+
+.grid-title {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "Monsterrat bold";
+    color: #60606e;
+    text-transform: uppercase;
+    line-height: 1.286;
+    margin-bottom: 10px;
+}
+.grid-date {
+    font-size: 12px;
+    color: #9a9a9a;
+}
+
+.categories {
+    &__title {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: #60606e;
+        text-transform: uppercase;
+        line-height: 3.429;
+    }
+
+    &__list-li {
+        border-bottom: 1px solid #8b8b8b;
+        padding: 0 15px;
+    }
+
+    &__list-li a {
+        color: #60606e;
+        line-height: 3.429;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@import "footer";
+
+@import "header-media";
+@import "footer-media";
