@@ -1,0 +1,123 @@
+@media(max-width: 1255px) {
+    .feed {
+        margin-right: 80px;
+    }
+}
+
+@media(max-width: 1066px) {
+    .feed {
+        margin-right: 60px;
+    }
+}
+
+@media(max-width: 910px) {
+    .feed {
+        margin-right: 50px;
+    }
+    .top {
+        margin-bottom: 90px;
+    }
+    .feed__item {
+        max-width: 100%;
+        margin-bottom: 59px;
+    }
+    .item__post-image {
+        height: 455px;
+    }
+}
+
+@media(max-width: 830px) {
+    .item__text {
+        font-size: 13px;
+        line-height: 1.414;
+    }
+    .item__title {
+        font-size: 17px;
+    }
+    .main__wrapper {
+        display: block;
+    }
+    .aside {
+        margin: 0 auto;
+    }
+    .aside__search-form {
+        margin-bottom: 24px;
+    }
+    .aside__categories {
+        margin-bottom: 30px;
+    }
+    .aside__tags {
+        margin-bottom: 30px;
+    }
+    .aside__tags-title {
+        margin-bottom: 20px;
+    }
+    .aside__name {
+        display: block;
+    }
+    .aside__content {
+        display: none;
+    }
+    .aside.active .aside__content {
+        display: block;
+    }
+}
+
+@media(max-width: 540px) {
+    .item__post-image {
+        height: 398px;
+    }
+    .item__title {
+        font-size: 16px;
+    }
+    .item__text {
+        line-height: 1.314;
+    }
+}
+
+@media(max-width: 490px) {
+    .item__post-image {
+        height: 315px;
+    }
+    .item__text {
+        font-size: 12px;
+    }
+    .item__title {
+        font-size: 15px;
+    }
+    .item__date {
+        padding: 8px 20px 8px 14px;
+    }
+}
+
+@media(max-width: 400px) {
+    .item__title {
+        font-size: 13px;
+    }
+    .item__text {
+        line-height: 1.014;
+    }
+   
+}
+
+@media(max-width: 360px){
+    .item__date {
+        padding: 8px 10px 8px 9px;
+        margin-right: 4px;
+        font-size: 13px;
+    }
+    .item__comment {
+        padding-left: 0;
+        margin-left: 5px;
+    }
+    .item__like {
+        padding-left: 0;
+        margin-left: 5px;
+    }
+    .item__post-image {
+        height: 260px;
+    }
+    .item__btn {
+        font-size: 13px;
+    }
+}
